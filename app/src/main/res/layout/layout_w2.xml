@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_4x"
+        android:background="@color/colorMyGray"
+        android:padding="@dimen/space_4x"
+        android:text="@string/solutions_box_one_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/space_4x"
+        android:layout_marginEnd="@dimen/space_4x"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/space_4x"
+            android:background="@color/colorMyRed"
+            android:text="@string/solutions_box_two_text"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_4x"
+            android:background="@color/colorMyYellow"
+            android:gravity="center"
+            android:text="@string/solutions_box_three_text"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:background="@color/colorMyGreen"
+            android:gravity="bottom"
+            android:text="@string/solutions_box_four_text"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginStart="@dimen/space_3x"
+        android:layout_marginEnd="@dimen/space_3x"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorLightGray"
+            android:text="@string/solutions_button_red_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_3x"
+            android:layout_marginEnd="@dimen/space_3x"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:background="@color/colorLightGray"
+            android:text="@string/solutions_button_yellow_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorLightGray"
+            android:text="@string/solutions_button_green_text" />
+    </LinearLayout>
+
+</LinearLayout>
